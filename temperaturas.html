@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!---Encabezado de pagina-->
+    <header>
+        <div class="caja">
+            <h1>
+                <img src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png" class="page-logo"  alt="Logo de la Barberia Alura">
+                <nav>
+                    <ul class="navegacion">
+                        <!-- etiqueta a nos permite hacer referencia a un vinculo ó podemos hacer 
+                        referencias a otras paginas como google etc-->
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="temperaturas.html">TEMPERATURAS</a></li>
+                        <li><a href="medidas.html">MEDIDAS</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </div>
+    </header>
+    <!---Cuerpo de pagina-->
+    <main>
+        <div class="convertidor">
+            <h1 onclick="titulo()" class="tituloPrincipal">Convertidor de Temperatura</h1>
+            <input type="number" id="cantidad" placeholder="Cantidad fahrenheit">
+
+            <select id="monedaDestino">
+                <option value="K">kelvin</option>
+                <option value="C">Celcius</option>
+                <!-- Agrega aquí más monedas -->
+            </select>
+
+            <button onclick="convertir()" class="boton">Convertir</button>
+            <h2 id="resultado"> 00°</h2>
+        </div>
+    </main>
+    <!---Pie de pagina-->
+    <footer>
+        <img src="imagenes/imagenes/logo-blanco.png" alt="">
+        <p class="derechosAutor">&copy Copyright Imersion Dev Alura-2024</p>
+    </footer>
+    <script src="temp.js"></script>
+</body>
+</html>
